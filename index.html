@@ -2,72 +2,119 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Aaditya's Personal Site</title>
+  <meta charset="utf-8">
+  <title>Aaditya Raj Kumawat</title>
+  <link rel="stylesheet" type="text/css" href="Styles/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
 </head>
+<!-- `````````````````````````````````````Notes(Display Property)```````````````````````````````````` -->
+
+
+<!--`````````````````````````````````````Block````````````````````````````````````````````` -->
+<!-- Block elements take up the complete width of the screen, thus blocks 
+out the display of any other element -->
+
+<!--````````````````````````````````````Inline```````````````````````````````````````` -->
+
+<!-- Inline display takes only the needed space as in case of span, anchor etc..,
+they keep stacking in front of each other -->
+<!-- We cannot control the width of inline -->
+
+<!-- ``````````````````````````````````Inline-Block``````````````````````````````````` -->
+
+<!-- Inline-Block allow you to change the width of the element, but initially its width is as
+that of the content -->
+
+<!-- ``````````````````````````````````display:none;``````````````````````````````````` -->
+
+<!-- Deletes the element from its position,as if its was never written in the code. -->
+
+<!-- #####################################--CSS Positning--################################### -->
+
+<!-- 
+  Position:  Static(default), Relative, Absolute, Fixed
+
+  Relative- Suppose it was initially present somewhere,
+            when its position is set to relative, we can use left, right, top, bottom 
+            to move it relative to its original position.
+
+            IMPORTANT--
+            1)When the element is moved by making it relative, it does not affect the position or 
+            the configration of other elements.
+            2)When we use the prop. like top, bottom, left, right we are kinda giving a margin
+            to it relative to its original posiiton.
+
+  Absolute- We are positioning the element w.r.t to its parent element for eg;
+            if we have an image inside a div the left, right, top, bottom prop. are used w.r.t the div.
+
+            When the element is moved from its position the other elements will take up its 
+            space, as if it was never present there.
+
+ -->
 
 <body>
-
-    <table cellspacing="20">
-        <tr>
-            <td><img src="aditya.jpg" alt="angela profile picture"></td>
-            <td>
-                <h1>Aaditya Raj Kumawat</h1>
-                <p><em>Founder of <strong><a href="#">IG Kings</a></strong> in Los Angeles(LA)</em></p>
-                <p>I am an IOS and Web Developer.</p>
-            </td>
-        </tr>
-        <td></td>
-    </table>
-
+  <!-- From here -->
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="">
+    <h1>I'm Aaditya</h1>
+    <h2>a Full-Stack Web Developer</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="">
+    <img class="mountain" src="images/mountain.png" alt="">
+  </div>
+  <!-- To Here -->
+  <!--There is a margin around the div as the browser has its own default CSS-->
+  <div class="middle-container">
+    <div class="profile">
+      <img class="myimg" src="images/aditya.png" alt="Aaditya-img">
+      <h2><b>Hello.</b></h2>
+      <p class="mybio">I am an iOS Developer and a Full-Stack Web Develpoer,
+        I am also the founder of IG Kings, at Los Angeles(LA)
+      </p>
+    </div>
     <hr>
-    <h3>Books and Teaching</h3>
-    <ul>
-        <li>The complete iOS App development Bootcamp</li>
-        <li>The Complete Web development Bootcamp</li>
-    </ul>
+    <div class="skills">
+      <h2><b>My Skills.</b></h2>
+      <div class="skill-row">
+        <img class="code-img" src="images//desktop.png" alt="">
+        <h3>Design and Development</h3>
+        <p class="code-skill-desc">I design and develop beautiful looking websites, which can make more sales and
+          generate high
+          revenue, I also make new video games.
+        </p>
+      </div>
+      <div class="skill-row">
+        <img class="chilli-img" src="images/chillies.png" alt="">
+        <h3>Hot Wings Challenge</h3>
+        <p class="chilli-skill-desc">My best skill is Social Media marketing and Digital marketing.Here we also train
+          new joinees to get and
+          required
+          skillset to flourish in the market place.
+        </p>
+      </div>
+    </div>
     <hr>
-    <h3>My Work Experience</h3>
-    <table cellspacing="10px">
-        <thead>
-            <tr>
-                <th> Date </th>
-                <th> Work </th>
-            </tr>
-        </thead>
-        <tr>
-            <td>2010-2013</td>
-            <td>Lead Developer at Tempo App</td>
-        </tr>
-        <tr>
-            <td>2010</td>
-            <td>Researcher at University of Congitave</td>
-            <tfoot>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you want to get in touch you can use any of the following ways</h3>
+      <p>You will probably get the answer about your project within 15 hours.</p>
+      <div class="contact_me">
+        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      </div>
+    </div>
+  </div>
 
-            </tfoot>
-        </tr>
 
-    </table>
-    <hr>
-    <h3>My Skills</h3>
+  <div class="bottom-container">
+    <div class="foot">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    </div>
+    <p class="copy">© 2018 Aaditya Raj Kumawat</p>
+  </div>
 
-    <table cellspacing="10px">
-        <tr>
-            <td>iOS Development</td>
-            <td>★★★★★</td>
-        </tr>
-        <tr>
-            <td>Web Development</td>
-            <td>★★★★</td>
-        </tr>
-        <tr>
-            <td>Photography</td>
-            <td>★★</td>
-        </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contactme.html">Contact Me!</a>
+
 </body>
 
 </html>
